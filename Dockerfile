@@ -1,4 +1,4 @@
-FROM node:0.10.45-wheezy
+FROM node:0.12.15-wheezy
 
 RUN set -x \
     && apt-get update --quiet \
