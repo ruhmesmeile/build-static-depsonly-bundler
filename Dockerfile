@@ -1,4 +1,4 @@
-FROM node:4.4.7-wheezy
+FROM node:5.12.0-wheezy
 
 RUN set -x \
     && apt-get update --quiet \
