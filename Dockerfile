@@ -2,7 +2,7 @@ FROM node:5.12.0-wheezy
 
 RUN set -x \
     && apt-get update --quiet \
-    && apt-get install --quiet --yes --no-install-recommends rubygems-integration inotify-tools libc6 \
+    && apt-get install --quiet --yes --no-install-recommends rubygems-integration inotify-tools libc6 libgmp3-dev \
     && apt-get clean \
     && gem install --no-ri --no-rdoc sass -v 3.4.22 \
     && gem install --no-ri --no-rdoc bundler \
